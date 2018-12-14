@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "652323057969",
+    "firebase_url": "https://navegador-126f5.firebaseio.com",
+    "project_id": "navegador-126f5",
+    "storage_bucket": "navegador-126f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652323057969:android:4428213fe25b8842",
+        "android_client_info": {
+          "package_name": "com.example.toni.navegadoradgp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652323057969-vr7e6tbo8k9qmusl7lm6hdlntuc91tb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_JSv757ptcOzCh8QKOjIZ2w3p0sRqrig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="@android:color/holo_blue_dark">
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation" app:itemTextColor="@color/colorPrimaryDark"/>
+    <TableRow
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tableRow"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" android:gravity="center" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.07999998"
+            android:layout_marginEnd="4dp" android:layout_marginRight="4dp">
+        <EditText
+                android:layout_width="232dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et" android:background="@android:color/background_light"
+                android:layout_height="40dp" android:autofillHints=""
+                android:selectAllOnFocus="false"
+                style="@style/Widget.AppCompat.AutoCompleteTextView" android:visibility="visible"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <Button
+                android:id="@+id/bBuscar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:background="@android:drawable/ic_menu_search" android:onClick="busqueda"
+                android:layout_height="match_parent" android:layout_width="69dp"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/button2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:background="@android:drawable/ic_menu_revert" android:onClick="refrescar"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tableRow2"
+            app:layout_constraintBottom_toTopOf="@+id/navigation" android:orientation="horizontal"
+            android:gravity="center" android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow">
+        <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/wb"/>
+    </TableRow>
+
+</android.support.constraint.ConstraintLayout>
